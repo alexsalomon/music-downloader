@@ -1,8 +1,8 @@
 Music Downloader
 ================
 
-Application that downloads songs from YouTube given a video or playlist  URL.\n
-In the case of a playlist, all the songs will be downloaded.\n
+Application that downloads songs from YouTube given a video or playlist  URL.
+In the case of a playlist, all the songs will be downloaded.
 Tested only on Mac OS X 10.8.5.
 
 Set up
