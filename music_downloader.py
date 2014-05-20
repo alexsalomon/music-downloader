@@ -11,7 +11,7 @@ def main():
 
 	if isValid and isPlaylistDownloadRequest(args):
 		downloadYoutubePlaylist(args.playlistName, args.url, args.username, args.password)
-	elif isValid and not isPlaylistDownloadRequest(args):
+	elif isValid and isIndividualSongDownloadRequest(args):
 		downloadYoutubeSongs(args.url)
 
 def getInputParser():
@@ -55,6 +55,9 @@ def validateArguments(args):
 
 def isPlaylistDownloadRequest(args):
 	return "playlist" in args.url
+
+def isIndividualSongDownloadRequest(args):
+	return not isPlaylistDownloadRequest(args)
 
 def downloadYoutubeSong(url):	
 	''' Function that downloads a video in the MP4 format from YouTube and converts it to MP3.

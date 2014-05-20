@@ -28,5 +28,14 @@ You can download a song from YouTube by providing an URL of a video containing t
 
 You can also download all the songs on a playlist by providing the playlist URL with your YouTube username and password:
 ```
-./music_downloader.py -u myusername@gmail.com -p mypassword123 "http://www.youtube.com/playlist?list=PLLMgg-xBAzEwEIDofx_nGPApLDIL5IkUx"
+./music_downloader.py -u myusername@gmail.com -p mypassword123 -n "Playlist Name" "http://www.youtube.com/playlist?list=PLLMgg-xBAzEwEIDofx_nGPApLDIL5IkUx"
 ```
+
+Troubleshooting:
+----------------
+
+If you find any problems downloading the songs, make sure you update the youtube-dl library by running the following command:
+```
+sudo pip install --upgrade youtube_dl
+```
+
